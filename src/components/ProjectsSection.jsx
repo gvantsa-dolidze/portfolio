@@ -6,7 +6,7 @@ const projects = [
     title: "W3School (Old version)",
     description:
       "A recreated old-school W3Schools interface built to demonstrate vintage web design and HTML/CSS fundamentals.",
-    image: "/public/pictures/gvantsa-dolidze.github.io_w3schools_.png",
+    image: "/pictures/gvantsa-dolidze.github.io_w3schools_.png",
     tags: ["HTML", "CSS"],
     demoUrl: "https://gvantsa-dolidze.github.io/w3schools/",
     githubUrl:
@@ -17,7 +17,7 @@ const projects = [
     title: "TBCxUSAID",
     description:
       "A fully funded online tech-education initiative by TBC and USAID offering practical ICT courses and job opportunities",
-    image: "/public/pictures/gvantsa-dolidze.github.io_tbcxusaid_.png",
+    image: "/pictures/gvantsa-dolidze.github.io_tbcxusaid_.png",
     tags: ["JavaScript", "HTML", "CSS"],
     demoUrl: "https://gvantsa-dolidze.github.io/tbcxusaid/",
     githubUrl: "https://github.com/gvantsa-dolidze/tbcxusaid",
@@ -27,7 +27,7 @@ const projects = [
     title: "E-commerce Platform",
     description:
       "A sleek modern e-commerce demo built with React to showcase shopping cart flows, product browsing, and real-world functionality.”",
-    image: "/public/pictures/ecommerce-cyan-eight.vercel.app_.png",
+    image: "/pictures/ecommerce-cyan-eight.vercel.app_.png",
     tags: ["React", "TypeScript", "Tailwind"],
     demoUrl: "https://ecommerce-cyan-eight.vercel.app/",
     githubUrl: "https://github.com/gvantsa-dolidze/final-project",
