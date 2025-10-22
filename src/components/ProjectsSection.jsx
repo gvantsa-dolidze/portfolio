@@ -3,32 +3,34 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    title: "W3School (Old version)",
+    description:
+      "A recreated old-school W3Schools interface built to demonstrate vintage web design and HTML/CSS fundamentals.",
+    image: "/public/pictures/gvantsa-dolidze.github.io_w3schools_.png",
+    tags: ["HTML", "CSS"],
+    demoUrl: "https://gvantsa-dolidze.github.io/w3schools/",
+    githubUrl:
+      "https://github.com/gvantsa-dolidze/gvantsa-dolidze.github.io/tree/main/w3schools",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "TBCxUSAID",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
-    image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "A fully funded online tech-education initiative by TBC and USAID offering practical ICT courses and job opportunities",
+    image: "/public/pictures/gvantsa-dolidze.github.io_tbcxusaid_.png",
+    tags: ["JavaScript", "HTML", "CSS"],
+    demoUrl: "https://gvantsa-dolidze.github.io/tbcxusaid/",
+    githubUrl: "https://github.com/gvantsa-dolidze/tbcxusaid",
   },
   {
     id: 3,
     title: "E-commerce Platform",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
-    image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+      "A sleek modern e-commerce demo built with React to showcase shopping cart flows, product browsing, and real-world functionality.”",
+    image: "/public/pictures/ecommerce-cyan-eight.vercel.app_.png",
+    tags: ["React", "TypeScript", "Tailwind"],
+    demoUrl: "https://ecommerce-cyan-eight.vercel.app/",
+    githubUrl: "https://github.com/gvantsa-dolidze/final-project",
   },
 ];
 
