@@ -9,18 +9,14 @@ import { Footer } from "../components/Footer";
 export const Home = () => {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
-      {/* Theme Toggle */}
       <ThemeToggle />
-      {/* Navbar */}
       <Navbar />
-      {/* Main Content */}
       <main>
         <HeroSection />
         <AboutSection />
         <SkillsSection />
         <ProjectsSection />
       </main>
-      {/* Footer */}
       <Footer />
     </div>
   );
