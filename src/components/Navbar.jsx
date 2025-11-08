@@ -1,6 +1,10 @@
+"use client";
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useState } from "react";
+
+import { LanguageToggle } from "../components/LanguageToggle";
+import { ThemeToggle } from "../components/ThemeToggle";
 
 const navItems = [
   { name: "Home", href: "#hero" },
@@ -16,23 +20,24 @@ export const Navbar = () => {
   return (
     <nav
       className={cn(
-        "fixed w-full z-40 transition-all duration-300 border-y-2 py-4",
+        "fixed top-0 w-full z-40 transition-all duration-300 border-b py-4",
         "bg-background/80 backdrop-blur-md shadow-xs"
       )}
     >
       <div className="container flex items-center justify-between">
+        {/* Logo */}
         <a
-          className="text-xl font-bold text-primary flex items-center"
           href="#hero"
+          className="text-xl font-bold text-primary flex items-center"
         >
           <span className="relative z-10">
-            <span className="text-glow text-foreground"> Gvantsa Dolidze </span>{" "}
+            <span className="text-glow text-foreground">Gvantsa Dolidze</span>{" "}
             Portfolio
           </span>
         </a>
 
-        {/* desktop nav */}
-        <div className="hidden md:flex space-x-8">
+        {/* Desktop nav */}
+        <div className="hidden md:flex items-center space-x-6">
           {navItems.map((item, key) => (
             <a
               key={key}
@@ -42,21 +47,24 @@ export const Navbar = () => {
               {item.name}
             </a>
           ))}
+          <LanguageToggle />
+          <ThemeToggle />
         </div>
 
-        {/* mobile nav */}
+        {/* Mobile menu button */}
 
         <button
           onClick={() => setIsMenuOpen((prev) => !prev)}
           className="md:hidden p-2 text-foreground z-50"
           aria-label={isMenuOpen ? "Close Menu" : "Open Menu"}
         >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}{" "}
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
         </button>
 
+        {/* Mobile nav overlay */}
         <div
           className={cn(
-            "fixed inset-0 bg-background/95 backdroup-blur-md z-40 flex flex-col items-center justify-center",
+            "fixed inset-0 bg-background/95 backdrop-blur-md z-40 flex flex-col items-center justify-center",
             "transition-all duration-300 md:hidden",
             isMenuOpen
               ? "opacity-100 pointer-events-auto"
