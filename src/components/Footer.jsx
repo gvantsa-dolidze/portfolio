@@ -80,7 +80,7 @@ export const Footer = () => {
                   <MapPin className="h-6 w-6 text-primary" />{" "}
                 </div>
                 <div>
-                  <a className="text-muted-foreground hover:text-primary transition-colors">
+                  <a className="text-muted-foreground hover:text-primary transition-colors cursor-default">
                     Georgia, Tbilisi
                   </a>
                 </div>
@@ -176,7 +176,7 @@ export const Footer = () => {
                 type="submit"
                 disabled={isSubmitting}
                 className={cn(
-                  "cosmic-button w-full flex items-center justify-center gap-2"
+                  "cosmic-button w-full flex items-center justify-center gap-2 cursor-pointer"
                 )}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
